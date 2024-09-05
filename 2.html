@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Page</title>
+    <style>
+        .registration-form {
+            border: 2px solid rgb(240, 61, 1);
+            padding: 20px;
+            width: 300px;
+            
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            background-color: pink;
+        }
+
+        h1 {
+            text-align: right;
+            color: whitesmoke;
+        }
+
+        input[type="text"],
+        input[type="radio"],
+        select {
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="./3.html" method="get" class="registration-form">
+        <h1>Registration Form</h1>
+        <input type="text" id="SAPID" name="SAPID" placeholder="SAP ID" required><br><br>
+        <input type="text" id="ROLLNO" name="ROLLNO" placeholder="ROLL NO." required><br><br>
+        <div>
+            <input type="radio" id="BTI" name="COURSE" value="BTECH"> BTI<br>
+            <input type="radio" id="B-tech " name="COURSE" value="MBA TECH"> B-tech<br>
+            <input type="radio" id="MBA" name="COURSE" value="BTECH(INT)"> MBA <br><br>
+        </div>
+        <select name="year" id="year" required>
+            <option value="" disabled selected>YEAR</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
